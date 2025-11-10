@@ -1,0 +1,32 @@
+site_name: Cortex Linux Documentation
+site_url: https://cortexlinux.com/docs/ # Placeholder URL
+repo_url: https://github.com/cortexlinux/cortex
+repo_name: GitHub
+edit_uri: edit/feat/mkdocs-setup/docs/ # Allows users to click 'Edit this page'
+copyright: Copyright &copy; 2025 Cortex Linux
+
+# Use the professional Material theme
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: purple
+  features:
+    - navigation.tabs
+    - content.code.copy
+
+# Define the required navigation structure
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage Guide: usage.md
+  - Examples: examples.md
+  - Contributing: contributing.md
+
+# Add Markdown extensions for better content features (e.g., tables, admonitions)
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
